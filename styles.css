@@ -1,0 +1,96 @@
+/* Import Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #121212;
+    color: #ffffff;
+    text-align: center;
+}
+
+.header {
+    padding: 20px;
+    color: #00ffcc;
+    text-shadow: 0 0 10px #00ffcc;
+}
+
+.header h1 {
+    font-size: 2.5rem;
+}
+
+.header p {
+    color: #aaaaaa;
+}
+
+.game-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.game-card {
+    position: relative;
+    width: 180px;
+    height: 180px;
+    background: rgba(255, 255, 255, 0.05);
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+    backdrop-filter: blur(10px);
+}
+
+.game-card:hover {
+    transform: scale(1.1);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.8);
+}
+
+.game-title {
+    position: absolute;
+    color: #00ffcc;
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-shadow: 0 0 5px #00ffcc;
+    z-index: 2;
+}
+
+.game-container iframe {
+    width: 90vw;
+    height: 80vh;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.7);
+}
+
+.back-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #00ffcc;
+    background: #1a1a2e;
+    border: 2px solid #00ffcc;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.back-button:hover {
+    background: #00ffcc;
+    color: #1a1a2e;
+}
+
+footer {
+    padding: 10px;
+    background: #1a1a2e;
+    color: #888888;
+}
